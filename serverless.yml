@@ -19,7 +19,7 @@ functions:
     events:
       - httpApi:
           path: /startSF
-          method: POST
+          method: GET
 
 plugins:
   - serverless-step-functions
