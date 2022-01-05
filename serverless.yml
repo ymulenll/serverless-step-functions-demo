@@ -3,7 +3,7 @@ frameworkVersion: "2 || 3"
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs12.x
   lambdaHashingVersion: "20201221"
   profile: yoelvismulen
 
@@ -33,6 +33,8 @@ custom:
   stepFunctionsLocal:
     accountId: 101010101010
     region: us-east-1
+    TaskResourceMapping:
+      FirstState: arn:aws:lambda:us-east-1:101010101010:function:hello
 
 stepFunctions:
   stateMachines:
